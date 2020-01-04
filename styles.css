@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+a:link,
+a:visited {
+  color: #5D6063;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'IBM Plex Sans', serif;
+  background-color: #BCF4F5;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  opacity: 1;
+  /* background-color: #5995DA; */
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+
+.menu {
+  margin-top: 15px;
+}
+
+.menu>li {
+  display: inline;
+  margin-right: 30px;
+  font-size: 25px;
+}
+
+.menu>li:last-of-type {
+  margin-right: 0;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.animation, .slogan {
+  margin: auto;
+}
+
+.button {
+  font-size: 30px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #00C4CC;
+}
+
+.booking-form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 80%;
+  padding: 50px;
+  margin: 50px 0 40px 0;
+}
+
+.legacy-form-row {
+  border: none;
+  /* border: 1px solid black; */
+}
+
+.legacy-form-row .radio-label {
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 0 20px 0 5px;
+  width: auto;
+}
