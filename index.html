@@ -1,100 +1,194 @@
-<!DOCTYPE html>
-<html lang='en'>
-
-<head>
-  <title>Tonal Airlines</title>
-  <meta charset='utf-8' />
-
-  <!-- Viewport -->
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-  <header>
-    <div class="logo">
-      <h1>Tonal Airlines</h1>
-    </div>
-    <nav>
-      <ul class='menu'>
-        <li><a href='#'>Wavelength</a></li>
-        <li><a href='#'>Careers</a></li>
-        <li><a href='#'>Travel Info</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="animation">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gn2PR54qX-A?autoplay=1?controls=0&amp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <!-- <img src="images/logo.png" style="width:400px;"> -->
-  </div>
-  <div class="slogan">
-    <h1>Keep in tune with the skies.</h1>
-  </div>
-  <a href="#" class="button">Book Now</a>
-  <form action='' method='get' class='booking-form'>
-    <fieldset class='legacy-form-row'>
-      <input id='trip-type-1' name='trip-type' type='radio' value='round-trip' checked />
-      <label for='trip-type-1' class='radio-label'>Roundtrip</label>
-      <input id='trip-type-2' name='trip-type' type='radio' value='one-way' />
-      <label for='trip-type-2' class='radio-label'>One-way</label>
-    </fieldset>
-    <div class="form-row">
-      <label for='origin'>Your Origin</label>
-      <select id='origin' name='origin'>
-        <option value="0">Select Airport or City:</option>
-        <option value="dfw">Dallas/Ft. Worth, TX (DFW)</option>
-        <option value="iah">Houston, TX - Intercontinental (IAH)</option>
-        <option value="okc">Oklahoma City, OK (OKC)</option>
-        <option value="abq">Albuquerque, NM (ABQ)</option>
-        <option value="lit">Little Rock, AR (LIT)</option>
-        <option value="msy">New Orleans, LA (MSY)</option>
-      </select>
-    </div>
-    <div class="form-row">
-      <label for='destination'>Your Destination</label>
-      <select id='destination' name='destination'>
-        <option value="0">Select Airport or City:</option>
-        <option value="dfw">Dallas/Ft. Worth, TX (DFW)</option>
-        <option value="iah">Houston, TX - Intercontinental (IAH)</option>
-        <option value="okc">Oklahoma City, OK (OKC)</option>
-        <option value="abq">Albuquerque, NM (ABQ)</option>
-        <option value="lit">Little Rock, AR (LIT)</option>
-        <option value="msy">New Orleans, LA (MSY)</option>
-      </select>
-    </div>
-    <div class="form-row">
-      <label for="depart">Departure date:</label>
-      <input type="date" id="depart" name="trip-depart" value="2020-01-11" min="2020-01-11" max="2022-12-30">
-    </div>
-    <div class="form-row">
-      <label for="return">Return date:</label>
-      <input type="date" id="return" name="trip-return" value="2020-01-12" min="2020-01-12" max="2022-12-31">
-    </div>
-    <div class="form-row">
-      <label for='passenger-count'>Passengers</label>
-      <input type="number" id="passenger-count" name="passenger-count" min="1" max="9">
-    </div>
-    <div class='form-row'>
-      <button>Search flights</button>
-    </div>
-  </form>
-  <div class="banner">
-    <img src="images/temp-plane.jpg" alt="plane">
-    <h1>Join the Wavelength Program now to get added benefits!</h1>
-    <p>The Wavelength program allows frequent flyers to earn points and save on future flights.</p>
-    <a href="#" class="button">Learn More</a>
-  </div>
-  <div class="banner">
-    <img src="images/temp.png" alt="plane">
-    <h1>Apply for a job at Tonal</h1>
-    <p>At Tonal, we value our employees hard work and make sure they have the best work conditions possible.</p>
-    <a href="#" class="button">Apply Now</a>
-  </div>
-</body>
-
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tonal Airlines</title>
+    <meta charset='utf-8' />
+    <!-- Viewport -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <input id="imgCompanyLogo" title="Click here to go back to the home page" onclick="javascript:document.location.href='index.html'; return false;" type="image" src="Images/logo2.png">
+            </div>
+            <div id="nav">
+                <ul class='menu'>
+                    <li><a title="Wavelength" href="wavelength.html">Wavelength</a></li>
+                    <li><a title="Careers" href="careers.html">Careers</a></li>
+                    <li><a title="Travel Info" href="travelinfo.html">Travel Info</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="animation">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gn2PR54qX-A?autoplay=1?controls=0&amp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="contents">
+            <!--
+            <h2>Place The Content Here</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula est ut auctor cursus. Proin sit amet suscipit felis, sit amet dapibus tellus. Integer rutrum dui ac odio fringilla, non pharetra dui dapibus. Donec in mollis augue. Donec bibendum suscipit arcu sed fringilla. Nulla ultricies velit eu dignissim condimentum. Maecenas pulvinar lorem ut nisl dictum, non porttitor nisi consequat. Nulla lacus dolor, molestie id egestas quis, posuere ac dui.</p>
+            <p>Sed at enim turpis. Nulla nulla nisi, tempus et eleifend ac, condimentum ac augue. Sed congue sollicitudin imperdiet. Nam nec porta metus. In hac habitasse platea dictumst. Donec imperdiet augue quam, sed consequat est venenatis sed. Quisque vel dolor urna. Vivamus euismod lobortis sapien nec rhoncus. Morbi dictum sagittis purus, eu tempus dui bibendum in. Vivamus finibus, dui non faucibus ultricies, lacus odio finibus neque, ac egestas tortor orci et nisi. Vestibulum nibh lorem, lacinia interdum urna vitae, pharetra varius tellus. Nam vitae nulla vitae arcu posuere iaculis. Nam molestie dapibus augue quis tempus. Aenean scelerisque at erat quis porttitor. Vivamus et vulputate ex. Fusce ut augue mauris.</p>
+            <p>Maecenas efficitur dolor ut tellus elementum, fringilla congue libero dictum. Fusce euismod ex magna, vel blandit tellus rutrum ac. Morbi bibendum viverra aliquet. Fusce accumsan justo ac orci placerat aliquam. Nunc pulvinar eros id velit efficitur, quis cursus lorem gravida. Suspendisse vulputate magna massa, sed placerat est mollis nec. Maecenas nec fringilla sapien. Proin a risus ultrices, ultrices erat quis, pharetra orci. Suspendisse vitae interdum tortor. Duis facilisis velit tellus, id lacinia nisi convallis ut. Nunc vulputate tellus diam, sed placerat purus aliquet id. Mauris vel tempor tellus. Duis faucibus dapibus efficitur.</p>
+            -->
+            <fieldset id="book_area" runat="server" style="width:470px;">
+                <legend>Book A Trip</legend>
+                <form action="" method="get">
+                    <table class="formBookTable">
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input id="trip-type-1" name="trip-type" type="radio" value="round-trip" checked />
+                                <label for="trip-type-1" class="fieldLabel">Round Trip</label>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input id="trip-type-2" name="trip-type" type="radio" value="one-way" />
+                                <label for="trip-type-2" class="fieldLabel">One-way</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label class="fieldLabel">Your Origin:</label>
+                            </td>
+                            <td>
+                                <select id="origin" name="origin">
+                                    <option value="0">Select Airport or City:</option>
+                                    <option value="dfw">Dallas/Ft. Worth, TX (DFW)</option>
+                                    <option value="iah">Houston, TX - Intercontinental (IAH)</option>
+                                    <option value="okc">Oklahoma City, OK (OKC)</option>
+                                    <option value="abq">Albuquerque, NM (ABQ)</option>
+                                    <option value="lit">Little Rock, AR (LIT)</option>
+                                    <option value="msy">New Orleans, LA (MSY)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label class="fieldLabel">Your Destination:</label>
+                            </td>
+                            <td>
+                                <select id="destination" name="destination">
+                                    <option value="0">Select Airport or City:</option>
+                                    <option value="dfw">Dallas/Ft. Worth, TX (DFW)</option>
+                                    <option value="iah">Houston, TX - Intercontinental (IAH)</option>
+                                    <option value="okc">Oklahoma City, OK (OKC)</option>
+                                    <option value="abq">Albuquerque, NM (ABQ)</option>
+                                    <option value="lit">Little Rock, AR (LIT)</option>
+                                    <option value="msy">New Orleans, LA (MSY)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label class="fieldLabel">Departure Date:</label>
+                            </td>
+                            <td>
+                                <input type="date" id="depart" name="trip-depart" value="2020-01-11" min="2020-01-11" max="2022-12-30">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label class="fieldLabel">Return Date:</label>
+                            </td>
+                            <td>
+                                <input type="date" id="return" name="trip-return" value="2020-01-12" min="2020-01-12" max="2022-12-31">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label class="fieldLabel">Passengers:</label>
+                            </td>
+                            <td>
+                                <input type="number" id="passenger-count" name="passenger-count" min="1" max="9">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-top:10px;">
+                                <button>Search Flights</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+        </div>
+
+        <!--<div class="slogan">
+            <h1>Keep in tune with the skies.</h1>
+        </div>
+        <a href="#" class="button">Book Now</a>
+        <form action='' method='get' class='booking-form'>
+            <fieldset class='legacy-form-row'>
+                <input id='trip-type-1' name='trip-type' type='radio' value='round-trip' checked />
+                <label for='trip-type-1' class='radio-label'>Roundtrip</label>
+                <input id='trip-type-2' name='trip-type' type='radio' value='one-way' />
+                <label for='trip-type-2' class='radio-label'>One-way</label>
+            </fieldset>
+            <div class="form-row">
+                <label for='origin'>Your Origin</label>
+                <select id='origin' name='origin'>
+                    <option value="0">Select Airport or City:</option>
+                    <option value="dfw">Dallas/Ft. Worth, TX (DFW)</option>
+                    <option value="iah">Houston, TX - Intercontinental (IAH)</option>
+                    <option value="okc">Oklahoma City, OK (OKC)</option>
+                    <option value="abq">Albuquerque, NM (ABQ)</option>
+                    <option value="lit">Little Rock, AR (LIT)</option>
+                    <option value="msy">New Orleans, LA (MSY)</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for='destination'>Your Destination</label>
+                <select id='destination' name='destination'>
+                    <option value="0">Select Airport or City:</option>
+                    <option value="dfw">Dallas/Ft. Worth, TX (DFW)</option>
+                    <option value="iah">Houston, TX - Intercontinental (IAH)</option>
+                    <option value="okc">Oklahoma City, OK (OKC)</option>
+                    <option value="abq">Albuquerque, NM (ABQ)</option>
+                    <option value="lit">Little Rock, AR (LIT)</option>
+                    <option value="msy">New Orleans, LA (MSY)</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="depart">Departure date:</label>
+                <input type="date" id="depart" name="trip-depart" value="2020-01-11" min="2020-01-11" max="2022-12-30">
+            </div>
+            <div class="form-row">
+                <label for="return">Return date:</label>
+                <input type="date" id="return" name="trip-return" value="2020-01-12" min="2020-01-12" max="2022-12-31">
+            </div>
+            <div class="form-row">
+                <label for='passenger-count'>Passengers</label>
+                <input type="number" id="passenger-count" name="passenger-count" min="1" max="9">
+            </div>
+            <div class='form-row'>
+                <button>Search flights</button>
+            </div>
+        </form>
+        <div class="banner">
+            <img src="images/temp-plane.jpg" alt="plane">
+            <h1>Join the Wavelength Program now to get added benefits!</h1>
+            <p>The Wavelength program allows frequent flyers to earn points and save on future flights.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+        <div class="banner">
+            <img src="images/temp.png" alt="plane">
+            <h1>Apply for a job at Tonal</h1>
+            <p>At Tonal, we value our employees hard work and make sure they have the best work conditions possible.</p>
+            <a href="#" class="button">Apply Now</a>
+        </div>-->
+        <div id="footer">
+            <div id="footer_nav">
+                <ul class="footer_links">
+                    <li><a title="About Us" href="aboutus.html">About Us</a></li>
+                    <li><a title="News Center" href="newscenter.html">News Center</a></li>
+                    <li><a title="Contact Us" href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="footer_copy">
+                Copyright © 2020 Tonal Airlines
+            </div>
+        </div>
+    </div>
+</body>
 </html>
