@@ -1,36 +1,58 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8"/>
-    <title>Wavelength</title>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tonal Airlines</title>
+    <meta charset='utf-8' />
     <!-- Viewport -->
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-
-    <link rel = 'stylesheet' href = 'styles.css'/>
-
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap" rel="stylesheet">
-
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <h1>Tonal Airlines</h1>
-      </div>
-      <nav>
-        <ul class='menu'>
-          <li><a href='wavelength.html'>Wavelength</a></li>
-          <li><a href='#'>Careers</a></li>
-          <li><a href='#'>Travel Info</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="banner">
-      <img src="images/temp.png" alt="plane">
-      <h1>Join the Wavelength Loyalty Program</h1>
-      <p>The Wavelength program will allow flyers to earn miles for everyday
-         activities and each trip they take.</p>
-      <a href="#" class="button">Join Now</a>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <input id="imgCompanyLogo" title="Click here to go back to the home page" onclick="javascript:document.location.href='index.html'; return false;" type="image" src="Images/logo2.png">
+            </div>
+            <div id="nav">
+                <ul class='menu'>
+                    <li><a title="Wavelength" href="wavelength.html">Wavelength</a></li>
+                    <li><a title="Careers" href="careers.html">Careers</a></li>
+                    <li><a title="Travel Info" href="travelinfo.html">Travel Info</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Wavelength</li>
+            </ul>
+        </div>
+        <div id="contents">
+            <img class="content_top_pic" src="images/temp-photo1.jpg" alt="Book your hotel with us and earn miles every night. Opens another site in a new window that may not meet accessibility guidelines." />
+            <h2>Frequent Flyer Program</h2>
+            <p>
+                The Wavelength program will allow flyers to earn miles for everyday
+                activities and each trip they take. <a href="index.html">Home</a>.
+            </p>
+            <p>
+                Here is an <a href="nowhere.html" style="color: #990000; text-decoration: line-through;">obsolete link</a>. Don't click?
+            </p>
+        </div>
+        <div id="footer">
+            <div id="footer_nav">
+                <ul class="footer_links">
+                    <li><a title="About Us" href="aboutus.html">About Us</a></li>
+                    <li><a title="News Center" href="newscenter.html">News Center</a></li>
+                    <li><a title="Contact Us" href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="footer_copy">
+                Copyright © 2020 Tonal Airlines
+            </div>
+        </div>
     </div>
-
-  </body>
+</body>
 </html>
