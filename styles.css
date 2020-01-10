@@ -174,7 +174,7 @@ ul {
 
 .footer_links>li {
   display: inline;
-  margin-right: 30px;
+  margin-right: 15px;
 }
 
 .footer_links>li:last-of-type {
@@ -190,12 +190,25 @@ ul {
   text-decoration: underline;
 }
 
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
 .booking {
   display: flex;
   flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
   height: 350px;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 20px 0px 0px 10px;
+  /* border: 1px solid black; */
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 fieldset {
@@ -210,9 +223,10 @@ fieldset {
 }
 
 .booking-image img {
-  height: 350px;
+  height: 250px;
   border: 1px solid white;
   border-radius: 10px;
+  /* margin:40px 0px 0px 100px; */
 }
 
 legend {
@@ -222,7 +236,7 @@ legend {
 }
 
 .formBookTable {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .formBookTable tr {
@@ -232,6 +246,7 @@ legend {
 .fieldLabel {
   color: #6c6c6c;
   font-weight: 600;
+  margin-right: 5px;
 }
 
 button {
@@ -255,7 +270,24 @@ button {
 
 .home-info {
   padding: 20px 0px 20px 0px;
-  display: block;
+  display:flex;
+  align-items: center;
+  line-height: 25px;
+}
+
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width:300px;
+  margin: 20px;
+}
+
+.card img {
+  width:inherit;
 }
 
 /*------------------------------------------------------------------*/
