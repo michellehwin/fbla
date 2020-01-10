@@ -16,6 +16,9 @@ body {
   align-items: center;
   font-family: 'IBM Plex Sans', serif;
   background-color: white;
+}
+
+p {
   line-height: 22px;
 }
 
@@ -123,6 +126,10 @@ h1, h2, h3, p {
 
 #contents h1 {
   margin-bottom: 20px;
+}
+
+.about-container h1{
+  margin-top:20px;
 }
 
 #contents h2 {
