@@ -76,7 +76,7 @@ h1, h2, h3, p {
   height: 100%;
 }
 
-#animation>iframe {
+#animation>video {
   position: absolute;
   top: 0;
   left: 0;
@@ -254,4 +254,34 @@ button {
 .booking-image {
   display: inline;
   width: 100%;
+}
+
+/*------------------------------------------------------------------*/
+/*-- Book page styles ----------------------------------------------*/
+/*------------------------------------------------------------------*/
+.bookPinkLabel18 {
+    color: #ee3ec9;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.bookLabelBold18 {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.bookLabel18 {
+    font-size: 18pt;
+}
+
+.bookSepTop30 {
+    padding-top: 30px;
+}
+
+.bookSepBottom30 {
+    padding-bottom: 30px;
+}
+
+.bookTableForm tr td {
+    padding-top: 10px;
 }

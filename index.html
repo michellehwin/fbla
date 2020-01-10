@@ -24,7 +24,11 @@
             </div>
         </div>
         <div id="animation">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gn2PR54qX-A?autoplay=1?controls=0&amp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <video width="315" height="560" autoplay controls>     <!-- autoplay loop controls -->
+              <source src="images/logooo.mp4" type="video/mp4">
+              <source src="images/logooo.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+          </video>
         </div>
         <div class="booking" id="contents">
             <fieldset id="book_area" runat="server" style="width:50%;">
@@ -100,7 +104,7 @@
                         <tr>
                             <td></td>
                             <td style="padding-top:10px;">
-                                <button>Search Flights</button>
+                                <button type="submit" formaction="book.html" >Search Flights</button>
                             </td>
                         </tr>
                     </table>
