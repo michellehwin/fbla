@@ -176,7 +176,7 @@ ul {
 
 #footer_copy {
   width: 30%;
-  padding-top: 5px;
+  padding-top: 8px;
   float: right;
   text-align: right;
 }
@@ -317,6 +317,51 @@ button {
 .about-us img {
   width: 40%;
   padding-right: 80px;
+  object-fit: contain;
+}
+
+.citation {
+  font-size:12px;
+  text-align: center;
+  margin: auto;
+  padding: 0px 0px 10px;
+}
+
+.wavelength-banner{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wavelength-banner a {
+  background-color: #FF9BC9;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.wavelength-banner .image>img {
+  width: auto;
+  height: 300px;
+  object-fit: contain;
+  margin: 20px 20px 0px 20px;
+}
+
+.wavelength-description {
+  display: flex;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  margin: 20px;
+}
+
+.wavelength-description>img {
+  width:450px;
+  margin-left:100px;
+  height: auto;
   object-fit: contain;
 }
 
